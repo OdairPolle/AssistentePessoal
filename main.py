@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from datetime import datetime
 
 
 app = Flask(__name__)
@@ -6,7 +7,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home.html')
+    data = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
+    return render_template('home.html', data=data)
 
 
 @app.route('/carteira')
