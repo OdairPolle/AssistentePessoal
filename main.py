@@ -11,27 +11,27 @@ def home():
 
 @app.route('/carteira')
 def carteira():
-    return None
+    return render_template('carteira.html')
 
 
 @app.route('/dispensa')
 def dispensa():
-    return None
+    return render_template('dispensa')
 
 
 @app.route('/estudo')
 def estudo():
-    return None
+    return render_template('estudo')
 
 
 @app.route('/compromisso')
 def compromisso():
-    return None
+    return render_template('compromisso')
 
 
 @app.route('/rotina')
 def rotina():
-    return None
+    return render_template('rotinha')
 
 
 if __name__ =='__main__':
