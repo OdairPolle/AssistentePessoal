@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device=width, initial-scale=1">
-    <title>Home</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block conteudo %}
+
 <div class="container">
     <header class="header">
         <div class="data">{{data}}
@@ -16,5 +11,5 @@
     </header>
 </div>
 <h2> Deus no comando</h2>
-</body>
-</html>
+
+{% endblock conteudo %}
