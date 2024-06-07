@@ -2,13 +2,13 @@ from flask import Flask, render_template
 from datetime import datetime
 
 
+data = datetime.now().strftime('%d/%m/%Y')
 app = Flask(__name__)
 
 
 @app.route('/')
 def home():
-    data = datetime.now().strftime('%d/%m/%Y %H:%M:%S')
-    return render_template('home.html', data=data)
+    return render_template('home.html')
 
 
 @app.route('/carteira')
